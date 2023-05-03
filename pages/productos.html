@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="grid">
+    <!-- encabezado -->
+    <header class="header-productos"> 
+        <div class="container-fluid">
+            <div class="row encabezado">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="text-center">ANTONELLA</h1>
+                </div>
+
+                <div class="col-lg-5 col-md-10 col-sm-10 col-xs-10 buscador">
+                    <form action="">
+                        <div class="d-flex flex-row">
+                            <input class="form-control me-2 caja-busqueda" type="buscador" placeholder="Ingrese el contenido a buscar" aria-label="Search">
+                            <button class="btn btn-outline-success boton-lupa" type="submit"><img src="../assets/img/lupa.png" alt="lupa" width="20" height="20"></button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 bolsa-compra">
+                    <img src="../assets/img/bolsas-de-compra.png" alt="bolsa" width="30" height="30">                    
+                </div>
+            </div>
+
+            <div class="row encabezado-subtitulo">
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <p>El shop donde encontrás todo lo que te gusta!</p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+                    <div class="container-fluid d-flex justify-content-end"> 
+                    <a class="navbar-brand mx-auto p-2" href="../index.html"><img src="../assets/img/coronaX.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav alineacion-items-navbar">
+                                <li class="nav-item"><a class="nav-link active" aria-current="true" href="#">Productos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./como_comprar.html">Como comprar</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./contactanos.html">Contactanos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./login_registrarme.html"><img src="../assets/img/login.png" alt="login" width="40" height="40">Ingresar/Registrarme</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+
+                </nav>
+            </div>
+        
+        </div>
+    </header>
+
+    <!-- cuerpo -->
+    <main class="main-productos">
+    
+        <section class="productos-filtros">  
+            
+            <!-- filtro ORDERNAR POR -->
+            <div class="btn-group dropend ordenamiento">
+                <button type="button" class="btn dropdown-toggle opcion-ordenamiento" data-bs-toggle="dropdown" aria-expanded="false">
+                ORDENAR POR
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Más relevantes</a></li>
+                    <li><a class="dropdown-item" href="#">Más vendidos</a></li>
+                    <li><a class="dropdown-item" href="#">Lanzamiento</a></li>
+                    <li><a class="dropdown-item" href="#">Precio más bajo</a></li>
+                    <li><a class="dropdown-item" href="#">Precio más alto</a></li>
+                </ul>
+            </div>
+            
+            <hr>
+
+            <!-- filtro TIPO DE PRODUCTO -->
+            <div class="tipo-producto">
+                <h5>TIPO DE PRODUCTO</h5>
+                    <form action="">
+                        <input type="checkbox" id="sweaters">
+                        <label for="sweaters">Sweaters</label><br>
+                        <input type="checkbox" id="camisas">
+                        <label for="camisas">Camisas</label><br>
+                        <input type="checkbox" id="jeans">
+                        <label for="jeans">Jeans</label><br>
+                        <input type="checkbox" id="pantalones">
+                        <label for="pantalones">Pantalones</label><br>
+                        <input type="checkbox" id="remeras">
+                        <label for="remeras">Remeras</label><br>
+                        <input type="checkbox" id="vestidospolleras">
+                        <label for="vestidospolleras">Vestidos y Polleras</label><br>
+                    </form>
+            </div>
+
+            <hr>
+
+            <!-- filtro TALLE -->
+            <div class="btn-group dropend talle">
+                <button type="button" class="btn dropdown-toggle opcion-talle" data-bs-toggle="dropdown" aria-expanded="false">
+                TALLE
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                    <li><a class="dropdown-item" href="#">2</a></li>
+                    <li><a class="dropdown-item" href="#">3</a></li>
+                    <li><a class="dropdown-item" href="#">4</a></li>
+                    <li><a class="dropdown-item" href="#">5</a></li>
+                    <li><a class="dropdown-item" href="#">6</a></li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <!-- filtro COLOR -->
+            <div class="btn-group dropend colores">
+                <button type="button" class="btn dropdown-toggle opcion-colores" data-bs-toggle="dropdown" aria-expanded="false">
+                COLOR
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Azul</a></li>
+                    <li><a class="dropdown-item" href="#">Beige</a></li>
+                    <li><a class="dropdown-item" href="#">Celeste Claro</a></li>
+                    <li><a class="dropdown-item" href="#">Gris</a></li>
+                    <li><a class="dropdown-item" href="#">Lila</a></li>
+                    <li><a class="dropdown-item" href="#">Marfil</a></li>
+                    <li><a class="dropdown-item" href="#">Negro</a></li>
+                    <li><a class="dropdown-item" href="#">Rosa</a></li>
+                    <li><a class="dropdown-item" href="#">Lila</a></li>
+                    <li><a class="dropdown-item" href="#">Marron</a></li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <!-- filtro PRECIOS -->
+            <div class="precios">
+                <h5>PRECIOS</h5>
+                <form action="">
+                    <input type="checkbox" id="cero">
+                    <label for="cero">$0 - $4999</label><br>
+                    <input type="checkbox" id="cincomil">
+                    <label for="cincomil">$5000 - $9999</label><br>
+                    <input type="checkbox" id="diezmil">
+                    <label for="diezmil">$10000 - $14999</label><br>
+                    <input type="checkbox" id="quincemil">
+                    <label for="quincemil">$15000 - $19999</label><br>
+                    <input type="checkbox" id="veintemil">
+                    <label for="veintemil">$20000 - $24999</label><br>
+                    <input type="checkbox" id="veinticincomil">
+                    <label for="veinticincomil">$25000 - $30000</label><br>
+                </form>
+            </div>
+        </section>
+
+        <section class="filtroHorizontal">
+            <!-- Ordenar por -->
+            <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Ordenar por:
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Más relevantes</a></li>
+                    <li><a class="dropdown-item" href="#">Más vendidos</a></li>
+                    <li><a class="dropdown-item" href="#">Lanzamiento</a></li>
+                    <li><a class="dropdown-item" href="#">Precio más bajo</a></li>
+                    <li><a class="dropdown-item" href="#">Precio más alto</a></li>
+                </ul>
+            </div>
+
+            <!-- Tipo de Producto -->
+            <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Tipo de Producto:
+                </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Sweaters</a></li>
+                        <li><a class="dropdown-item" href="#">Camisas</a></li>
+                        <li><a class="dropdown-item" href="#">Jeans</a></li>
+                        <li><a class="dropdown-item" href="#">Pantalones</a></li>
+                        <li><a class="dropdown-item" href="#">Remeras</a></li>
+                        <li><a class="dropdown-item" href="#">Vestidos y Polleras</a></li>
+                    </ul>
+            </div>
+
+            <!-- Talle -->
+            <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Talle:
+                </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                        <li><a class="dropdown-item" href="#">4</a></li>
+                        <li><a class="dropdown-item" href="#">5</a></li>
+                        <li><a class="dropdown-item" href="#">6</a></li>
+                    </ul>
+            </div>
+
+            <!-- Color -->
+            <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Color:
+                </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Azul</a></li>
+                        <li><a class="dropdown-item" href="#">Beige</a></li>
+                        <li><a class="dropdown-item" href="#">Celeste Claro</a></li>
+                        <li><a class="dropdown-item" href="#">Gris</a></li>
+                        <li><a class="dropdown-item" href="#">Lila</a></li>
+                        <li><a class="dropdown-item" href="#">Marfil</a></li>
+                        <li><a class="dropdown-item" href="#">Negro</a></li>
+                        <li><a class="dropdown-item" href="#">Rosa</a></li>
+                        <li><a class="dropdown-item" href="#">Lila</a></li>
+                        <li><a class="dropdown-item" href="#">Marron</a></li>
+                    </ul>
+            </div>
+
+                
+            <!-- Precios -->
+            <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Precios:
+                </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">$0 - $4999</a></li>
+                        <li><a class="dropdown-item" href="#">$5000 - $9999</a></li>
+                        <li><a class="dropdown-item" href="#">$10000 - $14999</a></li>
+                        <li><a class="dropdown-item" href="#">$15000 - $19999</a></li>
+                        <li><a class="dropdown-item" href="#">$20000 - $24999</a></li>
+                        <li><a class="dropdown-item" href="#">$25000 - $30000</a></li>
+                    </ul>
+            </div>
+
+        </section>
+
+
+        <section class="productos-titulo">
+            <p>Se encontraron 15 resultados</p>
+        </section>
+            
+        <section class="productos-resultados">
+            <div class="cards card1">
+                <img src="../assets/img/productos/producto1.jpg" alt="producto1" class="producto-imagen">
+                <div>
+                    <h6>SWEATER MERY</h6>
+                    <p>$23.699</p>
+                </div> 
+            </div>
+
+            <div class="cards card2">
+                <img src="../assets/img/productos/producto2.jpg" alt="producto2" class="producto-imagen">
+                <div>
+                    <h6>SWEATER RITA</h6>
+                    <p>$19.999</p>
+                </div> 
+            </div>
+
+            <div class="cards card3">
+                <img src="../assets/img/productos/producto3.jpg" alt="producto3" class="producto-imagen">
+                <div>
+                    <h6>SWEATER IDARA</h6>
+                    <p>$xx.xxx</p>
+                </div> 
+            </div>
+
+            
+            <div class="cards card4">
+                <img src="../assets/img/productos/producto4.jpg" alt="producto4" class="producto-imagen">
+                <div>
+                    <h6>producto 4</h6>
+                    <p>$xx.xxx</p>
+                </div> 
+            </div>
+
+            <div class="cards card5">
+                <img src="../assets/img/productos/producto5.jpg" alt="producto5" class="producto-imagen">
+                <div>
+                    <h6>producto 5</h6>
+                    <p>$xx.xxx</p>
+                </div> 
+            </div>
+
+            <div class="cards card6">
+                <img src="../assets/img/productos/producto6.jpg" alt="producto6" class="producto-imagen">
+                <div>
+                    <h6>producto 6</strong></h6>
+                    <p>$xx.xxx</p>
+                </div> 
+            </div>
+
+
+            <div class="cards card7">
+                <img src="../assets/img/productos/producto7.jpg" alt="producto7" class="producto-imagen">
+                <div>
+                    <h6>producto 7</h6>
+                    <p>$xx.xxx</p>
+                </div> 
+            </div>
+
+            <div class="cards card8">
+                <img src="../assets/img/productos/producto2.jpg" alt="producto8" class="producto-imagen">
+                <div>
+                    <h6>producto 8</h6>
+                    <p>$xx.xxx</p>
+                </div> 
+            </div>
+
+            <div class="cards card9">
+                <img src="../assets/img/productos/producto3.jpg" alt="producto9" class="producto-imagen">
+                <div>
+                    <h6>producto 9</h6>
+                    <p>$xx.xxx</p>
+                </div> 
+            </div>
+
+
+            <div class="cards card10">
+                <img src="../assets/img/productos/producto1.jpg" alt="producto10" class="producto-imagen">
+                <div>
+                    <h6>producto 10</h6>
+                    <p>$xx.xxx</p>
+                </div> 
+            </div>
+
+            <div class="cards card11">
+                <img src="../assets/img/productos/producto11.jpg" alt="producto11" class="producto-imagen">
+                <div>
+                    <h6>producto 11</h6>
+                    <p>$xx.xxx</p>
+                </div> 
+            </div>
+
+            <div class="cards card12">
+                <img src="../assets/img/productos/producto12.jpg" alt="producto12" class="producto-imagen">
+                <div>
+                    <h6>producto 12</h6>
+                    <p>$xx.xxx</p>
+                </div> 
+            </div>
+
+        </section>
+    
+    </main>
+
+    <!-- pie de pagina -->
+    <footer class="footer-productos">  
+        <section class="row pie-pagina d-flex justify-content-center align-items-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 input-group mb-3 suscribirme">
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Correo electrónico">
+                <span class="input-group-text" id="inputGroup-sizing-default"><strong>Suscribirme</strong></span>
+            </div>
+        </section>
+
+        <section class="row redes-sociales">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" alt="facebook" width="30" height="30"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="../assets/img/twitter.png" alt="twitter" width="30" height="30"></a> 
+                <a href="https://instagram.com/" target="_blank"><img src="../assets/img/instagram.png" alt="instagram" width="30" height="30"></a> 
+                <a href="https://www.tiktok.com/" target="_blank"><img src="../assets/img/tik-tok.png" alt="tik-tok" width="30" height="30"></a> 
+            </div>
+        </section>
+
+        <section class="row pie-direccion">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p><img src="../assets/img/ubicacion.png" alt="ubicacion" width="20" height="20">
+                Av. Fuerza Aérea 1234</p>
+                <p>Córdoba Argentina</p> 
+            </div>
+        </section>
+
+    </footer>
+
+    <!-- script js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+    </div>
+
+</body>
+</html>
