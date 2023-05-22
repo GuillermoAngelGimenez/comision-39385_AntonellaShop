@@ -1,0 +1,117 @@
+
+header{
+    @include grid(50% 40% 10%, 7fr, none, none, "titulo buscador bolsa" "subtitulo subtitulo subtitulo" "bnav bnav bnav" "main main main" "susc susc susc" "redes redes redes" "dire dire dire");
+    background-color: white;
+    .titulo{
+        grid-area: titulo;
+        @include flex(row, none, center, flex-start);
+        height: 10rem;
+        h1{
+            font-family: 'Anton', sans-serif;
+            text-decoration: underline;
+            letter-spacing: 50px;
+            font-size: 40px;
+            padding-left: 40px;
+            color: rgba(0, 200, 255, 0.934);
+            -webkit-text-stroke: 1px black;
+            text-shadow: 20px 10px 5px grey;
+            &::first-letter{
+                font-size: 1.5em; 
+            }
+        }
+    }
+    
+    .buscador{
+        grid-area: buscador;
+        @include flex(row, none, center, flex-end);
+        form{
+            div{
+                display: inline-flex;
+                padding-bottom: 10px;
+                input{
+                    height: 2.5rem;
+                    font-size: smaller;
+                    width: 400px;
+                }
+                button{
+                    position: relative;
+                    left: -8px;
+                    width: 4rem;
+                }
+            }
+        }
+    }
+
+    .bolsa-compra{
+        @include flex(row, none, center, flex-end);
+        grid-area: bolsa;
+        padding: 10px;
+    }
+
+    .subtitulo{
+        grid-area: subtitulo;
+        padding-top: 5px;
+        padding-left: 100px;
+        background-color: #D9D9D9;
+        font-family: $subtitulo-fuente-anton;
+        font-size: 25px;
+        letter-spacing: 10px;
+        color: $subtitulo-index-color-texto;
+        height: 3rem;
+    }
+
+    .navbar{
+        grid-area: bnav;
+    }
+
+}
+
+.animacion-antonella{
+    animation: letraALetra;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 3;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+@keyframes letraALetra{
+    0%{
+        transform: scale(1.1);
+        color: $color-amarillo;
+    }
+    10%{
+        transform: scale(1);
+        color: $color-negro;
+    }
+    20%{
+        transform: scale(1.1);
+        color: $color-amarillo;
+    }
+    30%{
+        transform: scale(1);
+        color: $color-negro;
+        }
+    40%{
+        transform: translate(0px,10px);
+    }  
+    50%{
+        transform: rotate(2deg);
+        color: $color-rosa;
+    }    
+    60%{
+        transform: rotate(-2deg);
+        color: $color-negro;
+    }    
+    70%{
+        transform: scale(1.2);
+        color: $color-amarillo;
+    }
+    80%{
+        transform: scale(1);
+        color: $color-negro;
+    }
+    90%{
+        transform: scale(1.2);
+        color: $color-amarillo;
+    }
+}

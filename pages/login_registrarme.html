@@ -4,155 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <meta name="description" content="Registrate fácilmente para avanzar con la compra de aquellos productos que te gustan.">
+    <title>Login/Registro - Antonella</title>
+    <link rel="shortcut icon" href="../assets/img/coronaX.png" type="imagen/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="../css/style-original.css"> -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="container-fluid">
         <!-- encabezado -->
         <header> 
-                <div class="row encabezado">
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                        <h1 class="text-center">ANTONELLA</h1>
+            <div class="titulo">
+                <h1 class="animacion-antonella">ANTONELLA</h1>
+            </div>
+            <div class="buscador">
+                <form action="">
+                    <div>
+                        <input class="form-control me-2" type="buscador" placeholder="Ingrese el contenido a buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><img src="../assets/img/lupa.png" alt="lupa" width="20" height="20"></button>
                     </div>
-
-                    <div class="col-xl-5 col-lg-5 col-md-10 col-sm-10 col-xs-10 buscador">
-                        <form action="">
-                            <div class="d-flex flex-row">
-                                <input class="form-control me-2 caja-busqueda" type="buscador" placeholder="Ingrese el contenido a buscar" aria-label="Search">
-                                <button class="btn btn-outline-success boton-lupa" type="submit"><img src="../assets/img/lupa.png" alt="lupa" width="20" height="20"></button>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-2 col-xs-2 bolsa-compra">
-                        <img src="../assets/img/bolsas-de-compra.png" alt="bolsa" width="30" height="30">                    
-                    </div>
-                </div>
-
-                <div class="row encabezado-subtitulo">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12">
-                        <p>El shop donde encontrás todo lo que te gusta!</p>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-                        <div class="container-fluid d-flex justify-content-end"> 
-                        <a class="navbar-brand mx-auto p-2" href="../index.html"><img src="../assets/img/coronaX.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">Inicio</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav alineacion-items-navbar">
-                                    <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="./login_registrarme.html">Como comprar</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="./contactanos.html">Contactanos</a></li>
-                                    <li class="nav-item"><a class="nav-link active" aria-current="true" href="#"><img src="../assets/img/login.png" alt="login" width="40" height="40">Ingresar/Registrarme</a></li>
-                                </ul>
-                            </div>  
-                        </div>
-
-                    </nav>
-                </div>
+                </form>
+            </div>
+            <div class="bolsa-compra">
+                <img src="../assets/img/bolsas-de-compra.png" alt="bolsa" width="30" height="30">                    
+            </div>
             
+            <div class="subtitulo">
+                    <p>El shop donde encontrás todo lo que te gusta!</p>
+            </div>
+    
+            <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary index-nav" data-bs-theme="dark">
+                <div class="container-fluid d-flex justify-content-end"> 
+                <a class="navbar-brand mx-auto p-2" href="../index.html" aria-current="page"><img src="../assets/img/coronaX.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav alineacion-items-navbar">
+                            <li class="nav-item"><a class="nav-link" aria-current="true" href="../pages/productos.html">Productos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/como_comprar.html">Como comprar</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/contactanos.html">Contactanos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/login_registrarme.html"><img src="../assets/img/login.png" alt="login" width="40" height="40"><u>Ingresar/Registrarme</u></a></li>
+                        </ul>
+                    </div>  
+                </div>
+    
+            </nav>
+    
         </header>
 
         <!-- cuerpo -->
-        <main>   
-                <div class="row login-principal">
-                    <div class="col-xl-6 col-lg-6 col-md-4 col-sm-2 col-xs-4x"></div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-xs-4 form-formato">
-                        <div class="row">
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h4 class="text-center login-titulo"><strong>Iniciar Sesión</strong></h4>
-                            </div>
-                        </div>
-                        <div class="row ">
-                            <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <h5 class="text-end login-subtitulo1">Iniciar Sesión</h5>
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <h5 class="text-start login-subtitulo2">Registrarme</h5p>
-                            </div> -->
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 text-end login-subtitulo1">
-                                Iniciar Sesión
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 text-start login-subtitulo2">
-                                Registrarme
-                            </div>
-                        </div> 
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <form class="form-cuerpo">
-                                <div>
-                                    <label for="Email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Correo Electrónico">
-                                </div>
-                                <div>
-                                    <label for="Contraseña" class="form-label">Contraseña</label>
-                                    <input type="password" class="form-control" id="Contraseña" placeholder="Contraseña/Password">
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="Check">Recordarme</label>
-                                    </div>
-
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                        <label class="form-check-label">¿Olvidaste tu contraseña?</label>
-                                    </div>
-                                </div>
-
-
-                                <div class="row">
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-end">
-                                        <button type="submit" class="btn btn-primary boton-sesion">Iniciar Sesión</button>
-                                    </div>
-                                </div>
-                            </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-4"></div>
+        <main class="main-login-registrarme">   
+            <div class="login-principal"><!-- login-principal -->
+                <!-- <div class="form-formato"> -->
+                
+                <div class="titulo"> <!-- titulo form -->
+                        <h4 class="text-center"><strong>Iniciar Sesión</strong></h4>
                 </div>
 
+                <div class="subtitulo1">
+                    <h5>Iniciar Sesión</h5>
+                </div>
+                <div class="subtitulo2">
+                    <h5>Registrarme</h5>
+                </div>
+
+                <form class="form-cuerpo">
+                    <div class="form-email">
+                        <label for="Email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Correo Electrónico">
+                    </div>
+
+                    <div class="form-contraseña">
+                        <label for="Contraseña" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="Contraseña" placeholder="Contraseña/Password">
+                    </div>
+
+                    <div class="form-validar">
+                        <div>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="Check">Recordarme</label>
+                        </div>
+
+                        <div>
+                            <label class="form-check-label">¿Olvidaste tu contraseña?</label>
+                        </div>
+                    </div>
+
+
+                    <div class="form-boton">
+                        <button type="submit" class="btn btn-primary boton-sesion">Iniciar Sesión</button>
+                    </div>
+                </form>
+
+            </div>
         </main>
 
         <!-- pie de pagina -->
         <footer>  
-            <section class="row pie-pagina d-flex justify-content-center align-items-center">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 input-group mb-3 suscribirme">
+            <section class="pie-pagina">
+                <div class="input-group mb-3 w-50">
                     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Correo electrónico">
                     <span class="input-group-text" id="inputGroup-sizing-default"><strong>Suscribirme</strong></span>
                 </div>
             </section>
-
-            <section class="row redes-sociales">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center">
+    
+            <section class="redes-sociales">
+                <div>
                     <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" alt="facebook" width="30" height="30"></a>
                     <a href="https://twitter.com/" target="_blank"><img src="../assets/img/twitter.png" alt="twitter" width="30" height="30"></a> 
                     <a href="https://instagram.com/" target="_blank"><img src="../assets/img/instagram.png" alt="instagram" width="30" height="30"></a> 
-                    <a href="https://www.tiktok.com/" target="_blank"><img src="../assets/img/tik-tok.png" alt="tik-tok" width="30" height="30"></a> 
+                    <a href="https://www.tiktok.com/" target="_blank"><img src="../assets/img/tik-tok.png" alt="tik-tok" width="30" height="30"></a>
                 </div>
             </section>
-
-            <section class="row pie-direccion">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <p><img src="../assets/img/ubicacion.png" alt="ubicacion" width="20" height="20">
+    
+            <section class="pie-direccion">
+                <p><img src="../assets/img/ubicacion.png" alt="ubicacion" width="20" height="20">
                     Av. Fuerza Aérea 1234</p>
-                    <p>Córdoba Argentina</p> 
-                </div>
+                <p>Córdoba Argentina</p> 
             </section>
-
+    
         </footer>
-    </div>
     <!-- script js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>

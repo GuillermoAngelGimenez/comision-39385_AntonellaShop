@@ -1,0 +1,159 @@
+@media (min-width: 768px) and (max-width: 992px){
+    // encabezado 
+    header{
+        @include grid(70% 30%, 7rem 3.5rem 5rem auto, center, center, "titulo titulo" "buscador bolsa" "subtitulo subtitulo" "navb navb");
+        .titulo{
+            grid-area: titulo;
+            @include flex(row, none, center, center);
+        }
+        .buscador{
+            grid-area: buscador;
+            padding-top: 0.5rem;
+            @include flex(row, none, center, center);
+        }
+        .bolsa-compra{
+            grid-area: bolsa;
+            @include flex(row, none, center, center);
+        }
+
+        .subtitulo{
+            grid-area: subtitulo;
+            @include flex(row, none, center, center);
+            font-size: 22px;
+            padding: 2rem;
+            padding-top: 3rem;
+        }
+
+        .navbar{
+            grid-area: navb;
+            a{
+
+            }
+            div{
+                ul{
+                    li{
+                        font-size: 17px;
+                    }
+                }
+            }
+            }
+        }
+
+    .animacion-antonella{
+        animation: none;
+    }
+        
+    // pie de pagina
+    footer{
+        .pie-pagina{
+            height: 120px;
+            div{
+                width: 25rem;
+                input{
+                    font-size: 14px;
+                }
+                span{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+        
+        .pie-direccion{
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+
+    // Index -------------------------
+    main{
+    .index-seccion-principal{
+        height: auto;
+        .index-contenido{
+        @include grid(20% 80% 20%, auto, center, none, none);
+            section{
+                grid-column: 2/3;
+                div{
+                    margin-bottom: 4rem;
+                    padding: 0.5rem;
+                    border-radius: 15px;
+                    h3{
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                    p{
+                        line-height: 30px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    }
+    
+    // Contactanos
+    .main-contactanos{
+        padding-right: 0px;
+        .contactanosPrincipal{
+            @include grid(6rem auto 6rem, repeat(2, 1fr), none, none, none);
+            .contactanosMedios{
+                font-size: 16px;
+                div{
+                    padding-top: 1rem;
+                    padding-bottom: 2rem;
+                }
+            }
+        }
+    }
+
+
+    // Cuerpo de productos
+    .main-productos{
+        grid-area: main;
+        padding-bottom: 10px;
+        margin-right: 0px;
+        background-color: $color-blanco;
+        @include grid(auto, 3rem 3rem repeat(2, auto) 10rem, none, none, "filtrosHor" "titulo" "productos" "productos" "  .  ");
+        .productos-filtros{
+            display: none;
+        }
+
+        .productos-titulo{
+            padding: 0px;
+            margin: 0px;
+            @include flex(column, none, center, center);
+        }
+
+        .filtroHorizontal{
+            grid-area: filtrosHor;
+            @include flex(row, none, space-around, none);
+            display: flex;
+            justify-content: space-around;
+        }
+
+        // listado de productos
+        .productos-resultados{
+            grid-area: productos;
+            padding-left: 0;
+            gap: 1rem;
+        }
+    }    
+
+    // Como_Comprar
+    .main-como-comprar{
+        grid-area: main;
+        @include grid(10px auto 10px, 5rem auto 10rem, none, center, none);
+        padding-right: 0px;
+        section{
+            grid-row: 2/3;
+            grid-column: 2/3;     
+        }
+    }
+
+    // Login_Registrarme
+    .main-login-registrarme{
+        @include grid(20% 60% 20%, 3rem 28rem 1rem, none, none, none);
+        height: 40rem;
+    }
+
+}

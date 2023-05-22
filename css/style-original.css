@@ -1,0 +1,1313 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;0,700;1,200;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background:#7da5a3;
+}
+
+main{
+    position: relative;
+}
+
+.container-fluid{
+    padding-right: 0;
+    margin-right: 0;
+}
+
+/* formato de titulo principal */
+h1{
+    font-family: 'Anton', sans-serif;
+    text-decoration: underline;
+    letter-spacing: 50px;
+    font-size: 40px;
+    padding-left: 40px;
+    text-shadow: 20px 10px 5px grey;
+}
+
+h1::first-letter{
+    font-size: 1.5em;
+}
+
+/* encabezado de fondo blanco */
+.encabezado{
+    background-color: white;
+    height: 10rem;
+}
+
+/* buscador */
+.buscador{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+/* buscador - input */
+.caja-busqueda{
+    width: 350px;
+}
+
+/* boton - buscador */
+.boton-lupa{
+    position: relative;
+    left: -8px;
+    width: 4rem;
+}
+
+/* icono-bolsa */
+.bolsa-compra{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 10px;
+}
+
+/* encabezado - subtitulo */
+.encabezado-subtitulo{
+    padding-top: 5px;
+    padding-left: 100px;
+    background-color: #D9D9D9;
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    letter-spacing: 10px;
+    color:red;
+    height: 3rem;
+}
+
+/* barra de navegacion */
+.navbar, .navbar-nav{
+    font-size: 19px;
+    width: 100%;
+}
+
+.alineacion-items-navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.navbar-brand{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+
+/* pie de pagina - suscribirme */
+.pie-pagina{
+    background-image: url("../assets/img/pie_de_pagina.jpg");
+    height: 9rem;
+}
+
+.suscribirme{
+    width: 600px;
+    height: 30px;
+}
+
+.input-group-text{
+    background-color: blue;
+    color: black;
+}
+
+.input-group-text strong:hover{
+    color: yellow;
+}
+
+/* pie de pagina - redes sociales */
+.redes-sociales{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: grey;
+    border-bottom: 1px solid black;
+    height: 3rem;
+}
+
+.redes-sociales a{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+/* pie de pagina - ubicacion */
+.pie-direccion{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    height: 8rem;
+    font-size: 17px;
+}
+
+.grid{
+    display: grid;
+    grid-template: repeat(3, auto)/repeat(3, auto);
+    grid-template-areas:
+    "header header  header"
+    "main   main    main"
+    "footer footer  footer"
+    ;
+}
+
+.header-productos, .header-como-comprar, .header-contactanos{
+    grid-area: header;
+
+}
+
+.footer-productos, .footer-como-comprar, .footer-contactanos{
+    grid-area: footer;
+}
+
+/* Cuerpo de productos */
+.main-productos{
+    grid-area: main;
+    width: 100%;
+    padding-right: 0;
+    margin-right: 0;
+    padding-bottom: 10px;
+    background-color: white;
+    display: grid;
+    grid-template: 3rem repeat(2, auto) 10rem/10rem 18rem 57rem 10rem;
+    grid-template-areas:
+    ".    .         titulo       ."
+    ". filtros    productos      ."
+    ".    .       productos      ."
+    ".    .            .         ."
+    ;  
+}
+
+/* index */
+.index-seccion-principal{
+    background-image: url("../assets/img/fondos-paginas/index.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 65rem;
+}
+
+.index-contenido{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.index-contenido div{
+    margin-bottom: 5rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.395);
+    border-radius: 15px;
+}
+
+
+.index-contenido div h3{
+    font-family: 'Montserrat', sans-serif;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+}
+
+
+.index-contenido div p{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+}
+
+
+/**Productos**/
+.productos-filtros{
+    grid-area: filtros;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tipo-producto, .precios{
+    padding-left: 15px;
+}
+
+.opcion-ordenamiento, .opcion-talle, .opcion-colores{
+    font-size: 20px;
+}
+
+.productos-titulo{
+    grid-area: titulo;
+    background-color: white;
+    font-style: italic;
+    justify-self: center;
+    align-self: center;
+}
+
+/* listado de productos */
+.productos-resultados{
+    grid-area: productos;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 1rem;
+    margin-left: 5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.producto-imagen{
+    width: 227px;
+    height: 341px;
+}
+
+
+.cards{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cards h6{
+    font-weight: bold;
+}
+
+.card1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+
+.card2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.card3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+
+.card4{
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+}
+
+.card5{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.card6{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+
+.card7{
+    grid-column: 1/2;
+    grid-row: 3/4;
+
+}
+
+.card8{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.card9{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+
+.card10{
+    grid-column: 1/2;
+    grid-row: 4/5;
+
+}
+
+.card11{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.card12{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+
+/** Como_Comprar **/
+.main-como-comprar{
+    grid-area: main;
+    width: 100%;
+    background-image: url("../assets/img/fondos-paginas/como-comprar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    display: grid;
+    grid-template: 5rem auto 10rem/15rem auto auto;
+    grid-template-areas:
+    ".     .        ."
+    ".  preguntas   ."
+    ".     .        ."
+    ;
+    height: auto;
+}
+
+.como_comprar-seccion-principal{
+    grid-area: preguntas;
+    background-size: cover;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.como_comprar-seccion-principal h3{
+    font-size: 30px;
+    color: blue;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+
+.como_comprar-seccion-principal section{
+    margin-bottom: 50px;
+    margin-left: 30px;
+    padding: 20px;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 15px;
+}
+
+.accordion-button, .como_comprar-seccion-principal section h4{
+    font-weight: bold;
+}
+
+.accordion{
+    padding-left: 1rem;
+}
+
+
+/* contactanos */
+.main-contactanos{
+    grid-area: main;
+    width: 100%;  
+    padding-right: 0;
+    margin-right: 0;
+    display: grid;
+    grid-template: auto auto/repeat(3, 1fr);
+    grid-template-areas: 
+    "titulo titulo  titulo"
+    "info   info    info"
+    ;
+}
+
+.contactanosTitulo{
+    grid-area: titulo;
+    width: 100%;
+    padding-right: 0;
+    margin-right: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: #D9D9D9;
+    height: 5rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 4rem;
+}
+
+.contactanosPrincipal{
+    grid-area: info;
+    width: 100%;
+    padding-right: 0;
+    margin-right: 0;
+    color: blue;
+    font-size: 20px;
+    background-image: url("../assets/img/fondos-paginas/contactanos.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 44rem;
+    line-height: 7rem; 
+    display: grid;
+    grid-template-columns: 3rem auto auto;
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.contactanos-info{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: black;
+    border-radius: 3rem;
+    opacity: 0.7;
+    padding: 1rem;
+}
+
+/* login-registro */
+.login-principal{
+    background-color: white;
+    background-image: url("../assets/img/fondos-paginas/login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    height: 45rem;
+}
+
+
+.form-formato{
+    font-family: 'Montserrat', sans-serif;
+    border: 5px solid blue;  
+    border-radius: 30px;
+    background-color: gray;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    opacity: 0.75;
+}  
+
+
+.form-cuerpo{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.form-cuerpo div{
+    padding-top: 1rem;
+} 
+
+.boton-sesion{
+    width: 10rem;
+}
+
+/* filtroProductos */
+.filtroHorizontal{
+    display: none;
+}
+
+.index-nav{
+    padding-left: 0.8rem;
+}
+
+/* Media Query ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* @media(max-width:1200px){ */
+@media (min-width: 992px) and (max-width: 1200px){
+    /* encabezado */
+    .encabezado-subtitulo{
+        font-size: 23px;
+    }
+
+    /* pie de pagina */
+    .suscribirme{
+        width: 30rem;
+        height: 3px;
+    }
+
+    .input-group-text{
+        width: 7rem;
+    }
+
+    /* main */
+    .form-formato{
+        border: 4px solid blue;  
+        border-radius: 25px;
+    }  
+
+    .form-cuerpo{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .form-cuerpo div{
+        padding-top: 1rem;
+    } 
+
+    .navbar{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+
+    /* Index -------------------------*/
+    .index-seccion-principal{
+        height: 70rem;
+    }
+    
+    .index-contenido{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    .index-contenido div{
+        margin-bottom: 4rem;
+        padding: 0.5rem;
+        border-radius: 15px;
+    }
+    
+    .index-contenido div h3{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .index-contenido div p{
+        line-height: 30px;
+        font-size: 17px;
+    }
+
+    /* Cuerpo de productos */
+    .main-productos{
+        grid-area: main;
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+        padding-bottom: 10px;
+        background-color: white;
+        display: grid;
+        grid-template: 3rem 3rem repeat(2, auto) 10rem/5rem auto 5rem;
+        grid-template-areas:
+        ".      filtrosHor       ."
+        ".      titulo       ."
+        ".     productos      ."
+        ".     productos      ."
+        ".         .          ."
+        ;  
+    }
+
+    .productos-filtros{
+        display: none;
+    }
+
+    /* listado de productos */
+    .productos-resultados{
+        margin-left: 0;
+    }
+
+
+    .filtroHorizontal{
+        grid-area: filtrosHor;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+    }
+    
+}
+
+/* @media(max-width:992px){ */
+@media (min-width: 768px) and (max-width: 992px){
+    /* encabezado */
+    .encabezado-subtitulo{
+        font-size: 23px;
+        height: 5rem;
+    }
+
+    /* encabezado - barra de navegacion */
+    .navbar{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* pie de pagina */
+    .suscribirme{
+        width: 25rem;
+        height: 2.5px;
+    }
+
+    .suscribirme .form-control{
+        font-size: smaller;
+    }
+
+    .input-group-text{
+        width: 6rem;
+        font-size: small;
+    }
+
+    /* main */
+    .form-formato{
+        border: 3px solid blue;
+        font-size: 15px;
+    }  
+
+    .form-cuerpo{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .login-titulo{
+        font-size: 22px;
+    }
+    
+    .login-subtitulo1, .login-subtitulo2{
+        font-size: 16px;
+    }
+
+    /* Index -------------------------*/
+    .index-seccion-principal{
+        height: 70rem;
+    }
+    
+    .index-contenido{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    .index-contenido div{
+        margin-bottom: 4rem;
+        padding: 0.5rem;
+        border-radius: 15px;
+    }
+    
+    .index-contenido div h3{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .index-contenido div p{
+        line-height: 30px;
+        font-size: 17px;
+    }
+
+    /* contactanos */
+    .contactanosTitulo{
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+        font-size: 18px;
+        padding-right: 4rem;
+    }
+    
+    .contactanosPrincipal{
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+        font-size: 17px;
+        line-height: 7rem; 
+    }
+
+    /* Cuerpo de productos */
+    .main-productos{
+        grid-area: main;
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+        padding-bottom: 10px;
+        background-color: white;
+        display: grid;
+        grid-template: 3rem 3rem repeat(2, auto) 10rem/5rem auto 5rem;
+        grid-template-areas:
+        ".      filtrosHor       ."
+        ".      titulo       ."
+        ".     productos      ."
+        ".     productos      ."
+        ".         .          ."
+        ;  
+    }
+
+    .productos-filtros{
+        display: none;
+    }
+
+    /* listado de productos */
+    .productos-resultados{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    .filtroHorizontal{
+        grid-area: filtrosHor;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+    }
+    
+}
+
+/* @media(max-width:768px){ */
+@media (min-width: 576px) and (max-width: 768px){
+    /* encabezado */
+    .encabezado-subtitulo{
+        font-size: 18px;
+        height: 5rem;
+        padding-top: 2px;
+        padding-left: 30px;
+        letter-spacing: 5px;
+    }
+
+    .encabezado{
+        background-color: white;
+        height: 9rem;
+    }
+
+    .encabezado h1{
+        letter-spacing: 19px;
+        font-size: 33px;
+        padding-left: 1px;
+        text-shadow: 5px 3px 2px grey;
+    }
+    
+    h1::first-letter{
+        font-size: 1.3em;
+    }
+
+    .caja-busqueda{
+        width: 250px;
+        height: 2rem;
+    }
+
+    .boton-lupa{
+        position: relative;
+        left: -8px;
+        width: 3rem;
+        height: 2rem;
+    }
+
+    .boton-lupa img{
+        padding-bottom: 0.1rem;
+    }
+
+    .buscador{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bolsa-compra{
+        padding-bottom: 2rem;
+    }
+
+    /* encabezado - barra de navegacion */ 
+    .navbar{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    /* pie de pagina */
+    .pie-pagina{
+        height: 7rem;
+    }
+
+    .suscribirme{
+        width: 21rem;
+        height: 2px;
+    }
+
+    .input-group-text{
+        width: 5rem;
+        font-size: 12px;
+        padding-left: 7px;
+    }
+
+     /* pie de pagina - redes sociales */
+    .redes-sociales a{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    /* pie de pagina - ubicacion */
+    .pie-direccion{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+        height: 6rem;
+        letter-spacing: 1.5px;
+        font-size: 15px;
+    }
+
+    /* main */
+    .login-principal{
+        height: 35rem;
+    }
+    
+    .form-formato{
+        border: 3px solid blue;  
+        border-radius: 10px;
+        margin-top: 3rem;
+    }  
+    
+    .form-cuerpo{
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+    
+    .form-cuerpo div{
+        padding-top: 1rem;
+    } 
+    
+    .boton-sesion{
+        width: 8rem;
+        height: auto;
+        font-size: 15px;
+    }
+    
+    .login-titulo{
+        font-size: 20px;
+    }
+    
+    .login-subtitulo1, .login-subtitulo2{
+        font-size: 15px;
+    }
+
+    
+    /* Index -------------------------*/
+    .index-seccion-principal{
+        height: 65rem;
+    }
+    
+    .index-contenido{
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+    
+    .index-contenido div{
+        margin-bottom: 2rem;
+        padding: 0.5rem;
+        border-radius: 15px;
+    }
+    
+    .index-contenido div h3{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .index-contenido div p{
+        line-height: 30px;
+        font-size: 15px;
+    }
+
+    /* contactanos */
+    .contactanosTitulo{
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+        font-size: 16px;
+        padding-right: 4rem;
+    }
+    
+    .contactanosPrincipal{
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+        font-size: 13px;
+        line-height: 5rem; 
+    }
+
+    .contactanos-info{
+        border-radius: 2rem;
+        padding: 0.5rem;
+    }
+
+    
+    /* Cuerpo de productos */
+    .main-productos{
+        grid-area: main;
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+        padding-bottom: 10px;
+        background-color: white;
+        display: grid;
+        grid-template: 3rem 3rem repeat(2, auto) 10rem/2rem auto 2rem;
+        grid-template-areas:
+            ".      filtrosHor       ."
+            ".      titulo       ."
+            ".     productos      ."
+            ".     productos      ."
+            ".         .          ."
+            ;  
+        }
+    
+    .productos-filtros{
+        display: none;
+    }
+    
+    .filtroHorizontal{
+        grid-area: filtrosHor;
+        display: flex;
+        justify-content: space-around;
+        /* width: 100%; */
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    /* listado de productos */
+    .productos-resultados{
+    grid-area: productos;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+    gap: 1rem;
+    /* width: 100%;  */
+    padding-right: 0;
+    margin-right: 0;
+    justify-items: center;
+    align-items: center;
+    }
+
+    .card1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    
+    }
+    
+    .card2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .card3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    
+    .card4{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    
+    }
+    
+    .card5{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .card6{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    
+    .card7{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    
+    }
+    
+    .card8{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    
+    .card9{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    
+    
+    .card10{
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    
+    .card11{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    
+    .card12{
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 576px){
+    /* main */
+    .login-principal{
+        height: 35rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* encabezado */
+    .encabezado-subtitulo{
+        font-size: 18px;
+        height: 5rem;
+        padding-top: 2px;
+        padding-left: 30px;
+        letter-spacing: 5px;
+    }
+
+    .encabezado h1{
+        letter-spacing: 19px;
+        font-size: 33px;
+        padding-left: 1px;
+        text-shadow: 5px 3px 2px grey;
+    }
+
+    
+    /* encabezado - barra de navegacion */ 
+    .navbar{
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .buscador{
+        width: auto;
+    }
+
+    .caja-busqueda{
+        width: auto;
+    }
+
+    .bolsa-compra{
+        width: auto;
+        text-align: end;
+    }
+
+    /* pie de pagina */
+    .pie-pagina{
+        height: 5rem;
+    }
+
+    .suscribirme{
+        width: 18rem;
+        height: 1.5px;
+    }
+
+    .input-group-text{
+        width: 5rem;
+        font-size: 10px;
+        padding-left: 7px;
+    }
+
+    /* pie de pagina - redes sociales */
+    .redes-sociales a{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    /* pie de pagina - ubicacion */
+    .pie-direccion{
+        padding-top: 10px;
+        height: 5rem;
+        font-size: 13px;
+    }
+
+    .form-formato{
+        border: 3px solid blue;  
+        border-radius: 10px;
+        margin-top: 3rem;
+        font-size: 13px;
+        margin-top: 2rem;
+        width: 18rem;
+        align-self: center;
+    }  
+
+    .form-control{
+        font-size: smaller;
+    }
+        
+    .boton-sesion{
+        width: 7rem;
+        font-size: 12px;
+    }
+
+    .login-titulo{
+        font-size: 18px;
+    }
+        
+    .login-subtitulo1, .login-subtitulo2{
+        font-size: 14px;
+        text-align: center; 
+        width: 138px;
+    }
+
+    /* Index -------------------------*/
+    .index-seccion-principal{
+        height: 70rem;
+    }
+        
+    .index-contenido{
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+    }
+        
+    .index-contenido div{
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border-radius: 10px;
+    }
+        
+    .index-contenido div h3{
+        font-size: 15px;
+        font-weight: bold;
+    }
+        
+    .index-contenido div p{
+        line-height: 30px;
+        font-size: 12px;
+    }
+
+    /* contactanos */
+    .contactanosTitulo{
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+        font-size: 12px;
+        padding-right: 3rem;
+    }
+        
+    .contactanosPrincipal{
+        grid-area: info;
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+        font-size: 12px;
+        line-height: 2rem; 
+        height: 35rem;
+        display: grid;
+        grid-template-columns: 1rem auto 1rem;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .contactanos-info{
+        grid-row: 2/3;
+        grid-column: 2/3;
+        border-radius: 1.5rem;
+        padding: 0.2rem;
+    }
+
+    .contactanos-info div{
+        margin-top: 2rem;
+    }
+
+    /* Cuerpo de productos */
+    .main-productos{
+        grid-area: main;
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+        padding-bottom: 10px;
+        background-color: white;
+        display: grid;
+        grid-template: auto 3rem repeat(2, auto) 10rem/2rem auto 2rem;
+        grid-template-areas:
+            ".      filtrosHor       ."
+            ".      titulo       ."
+            ".     productos      ."
+            ".     productos      ."
+            ".         .          ."
+            ;  
+        }
+    
+    .productos-filtros{
+        display: none;
+    }
+    
+    .filtroHorizontal{
+        /* grid-area: filtrosHor;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0; */
+    }
+
+    .filtroHorizontal{
+        grid-area: filtrosHor;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    /* listado de productos */
+    .productos-resultados{
+    grid-area: productos;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(12, auto);
+    /* gap: 1rem; */
+    /* width: 100%; */
+    padding-right: 0;
+    margin-right: 0;
+    justify-items: center;
+    align-items: center; 
+    }
+
+    .card1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .card2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .card3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    
+    .card4{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    
+    .card5{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    
+    .card6{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    
+    .card7{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    
+    .card8{
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+    
+    .card9{
+        grid-column: 1/2;
+        grid-row: 9/10;
+    }
+    
+    .card10{
+        grid-column: 1/2;
+        grid-row: 10/11;
+    }
+    
+    .card11{
+        grid-column: 1/2;
+        grid-row: 11/12;
+    }
+    
+    .card12{
+        grid-column: 1/2;
+        grid-row: 12/13;
+    }
+}
+/* ---------------------------------------------------------------------------------------- */
+
+
+

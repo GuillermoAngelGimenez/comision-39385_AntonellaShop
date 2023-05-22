@@ -1,0 +1,145 @@
+.main-productos{
+    grid-area: main;
+    padding-bottom: 10px;
+    background-color: $color-blanco;
+    @include grid(15rem auto,  3rem repeat(2, auto) 10rem, center, none, " .  titulo" "filtros  productos" " .  productos" "   .    . ");
+
+    .productos-filtros{
+        grid-area: filtros;
+        border-left: 1px solid $color-negro;
+        border-right: 1px solid $color-negro;
+        font-family: $fuente-h3-parrafo-index-monserrat;
+        @include flex (column, none, flex-start, flex-start);
+        div{
+            button{
+                color: $color-azul;
+            }
+        }
+        div{
+            h5{
+                color: $color-azul;
+            }
+            padding-bottom: 0.5rem;
+        }
+    }
+
+    .filtroHorizontal{
+        display: none;        
+    }
+
+    .productos-titulo{
+        grid-area: titulo;
+        background-color: $color-blanco;
+        font-style: italic;
+        @include flex (row, none, center, center);
+    }
+
+    .productos-resultados{
+        grid-area: productos;
+        @include grid(repeat(3, 1fr), repeat(4, auto), none, center, center);
+        padding-left: 3rem;
+        gap: 1rem;
+    }
+
+}
+
+
+.tipo-producto, .precios{
+    padding-left: 15px;
+}
+
+.opcion-ordenamiento, .opcion-talle, .opcion-colores{
+    font-size: 20px;
+}
+
+.producto-imagen{
+    width: 227px;
+    height: 341px;
+}
+
+
+.cards{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 3px solid grey;
+    background-image: radial-gradient(circle, rgba(255,251,251,1) 35%, rgba(207,219,218,1) 76%);
+    border-radius: 2rem;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.cards{
+    div{
+        h6{
+            font-weight: bold;
+        }
+    }
+}
+
+.card1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+
+.card2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.card3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.card4{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.card5{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.card6{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.card7{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.card8{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.card9{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.card10{
+    grid-column: 1/2;
+    grid-row: 4/5;
+
+}
+
+.card11{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.card12{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+

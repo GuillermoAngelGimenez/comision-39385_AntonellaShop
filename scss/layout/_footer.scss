@@ -1,0 +1,51 @@
+footer{
+    .pie-pagina{
+        grid-area: susc;
+        height: 144px;
+        background-image: url($pie-pagina-imagen);
+        @include flex(row, none, center, center);        
+        div{
+            width: 30rem;
+            input{
+                font-size: 18px;
+            }
+            span{
+                background-color:#0d6efd;
+                color: $color-negro;
+                strong{
+                    &:hover{
+                        color: $color-amarillo;
+                    }
+                }
+            }
+        }
+    }
+
+    .redes-sociales{
+        grid-area: redes;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: $color-gris-redes-sociales;
+        border-bottom: 1px solid black;
+        height: 3rem;
+        @include flex(row, none, center, none);
+        div{
+            a{
+                padding-left: 35px;
+                padding-right: 35px;
+            }
+        }
+    }
+
+    .pie-direccion{
+        grid-area: dire;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: white;
+        letter-spacing: 2px;
+        text-align: center;
+        height: 8rem;
+        font-size: 17px;
+    }
+}
+

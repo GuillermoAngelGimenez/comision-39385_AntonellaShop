@@ -1,0 +1,35 @@
+.index-seccion-principal{
+    grid-area: main;
+    background-image: url($main-index-imagen);
+    @include config-imagen(cover, no-repeat, center, scroll);
+    height: 65rem;
+    .index-contenido{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        @include grid(4fr 6fr 2fr, auto, center, none, none);
+        section{
+            grid-column: 2/3;
+            div{
+                margin-bottom: 5rem;
+                padding: 0.5rem;
+                background-color: rgba(0, 0, 0, 0.395);
+                border-radius: 15px;
+                h3{
+                    font-family: $fuente-h3-parrafo-index-monserrat;
+                    color: $color-azul;
+                    font-size: 20px;
+                    font-weight: bold;
+                    background-color: $color-blanco;
+                }
+                p{
+                    font-family: $fuente-h3-parrafo-index-monserrat;
+                    line-height: 30px;
+                    font-style: italic;
+                    font-weight: bold;
+                    font-size: 17px;
+                    color: $color-blanco;
+                }
+            }
+        }
+    }          
+}
