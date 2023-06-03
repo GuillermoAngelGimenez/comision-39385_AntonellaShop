@@ -116,6 +116,9 @@
     main{
     .index-seccion-principal{
         height: auto;
+        .btn-ir-arriba{
+            display: none;
+        }
         .index-contenido{
         @include grid(5% 90% 5%, auto, center, none, none);
             section{
@@ -168,7 +171,19 @@
     // Cuerpo de productos
     .main-productos{
         grid-area: main;
-        @include grid(auto, auto 3rem repeat(2, auto) 10rem, none, none, "filtrosHor" "titulo" "productos" "productos" "  .  ");
+        @include grid(auto, auto 3rem auto 5rem, none, none, "filtrosHor" "titulo" "productos" "  .  ");
+        .btn-ir-arriba{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            a{
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
         .productos-filtros{
             display: none;
         }
@@ -180,76 +195,103 @@
         .filtroHorizontal{
             grid-area: filtrosHor;
             @include flex(column, none, center, center);
+            div{
+                button{
+                    font-size: 14px;
+                }
+                ul{
+                    font-size: 13px;
+                }
+            }
         }
 
         // listado de productos
         .productos-resultados{
             grid-area: productos;
-            padding-left: 0;
-            gap: 3rem;
-            @include grid(auto, repeat(12, auto), center, center, none);
+            padding: 0px;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            gap: 1rem;
+            @include grid(repeat(2, auto), repeat(6, auto), center, center, none);
+            text-align: center;
         }
     }    
+
+    .producto-imagen{
+        width: 90%;
+        height: 90%;
+    }
 
     .card1{
         grid-column: 1/2;
         grid-row: 1/2;
-    
+        @include cards-320();
     }
     
     .card2{
-        grid-column: 1/2;
-        grid-row: 2/3;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        @include cards-320();
     }
     
     .card3{
         grid-column: 1/2;
-        grid-row: 3/4;
+        grid-row: 2/3;
+        @include cards-320();
     }
     
     .card4{
-        grid-column: 1/2;
-        grid-row: 4/5;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        @include cards-320();
     }
     
     .card5{
         grid-column: 1/2;
-        grid-row: 5/6;
+        grid-row: 3/4;
+        @include cards-320();
     }
     
     .card6{
-        grid-column: 1/2;
-        grid-row: 6/7;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        @include cards-320();
     }
     
     .card7{
         grid-column: 1/2;
-        grid-row: 7/8;
+        grid-row: 4/5;
+        @include cards-320();
     }
     
     .card8{
-        grid-column: 1/2;
-        grid-row: 8/9;
+        grid-column: 2/3;
+        grid-row: 4/5;
+        @include cards-320();
     }
     
     .card9{
         grid-column: 1/2;
-        grid-row: 9/10;
+        grid-row: 5/6;
+        @include cards-320();
     }
     
     .card10{
-        grid-column: 1/2;
-        grid-row: 10/11;
+        grid-column: 2/3;
+        grid-row: 5/6;
+        @include cards-320();
     }
     
     .card11{
         grid-column: 1/2;
-        grid-row: 11/12;
+        grid-row: 6/7;
+        @include cards-320();
     }
     
     .card12{
-        grid-column: 1/2;
-        grid-row: 12/13;
+        grid-column: 2/3;
+        grid-row: 6/7;
+        @include cards-320();
     }
 
     // Como_Comprar
@@ -257,6 +299,9 @@
         grid-area: main;
         @include grid(10px auto 10px, 2rem auto 10rem, none, center, none);
         padding-right: 0px;
+        .btn-ir-arriba{
+            display: none;
+        }
         section{
             grid-row: 2/3;
             grid-column: 2/3; 

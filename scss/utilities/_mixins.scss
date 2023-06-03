@@ -21,3 +21,16 @@
     background-position: $position;
     background-attachment: $attach;
 }
+
+@mixin cards-320(){
+    line-height: normal;
+    padding: 0px;
+    div{
+        h6{
+            font-size: 14px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}

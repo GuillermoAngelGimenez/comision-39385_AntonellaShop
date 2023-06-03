@@ -1,5 +1,7 @@
 .main-productos{
     grid-area: main;
+    // background-image: url($main-productos-imagen);
+    // @include config-imagen(cover, no-repeat, center, scroll);
     padding-bottom: 10px;
     background-color: $color-blanco;
     @include grid(15rem auto,  3rem repeat(2, auto) 10rem, center, none, " .  titulo" "filtros  productos" " .  productos" "   .    . ");
@@ -16,7 +18,8 @@
             }
         }
         div{
-            h5{
+            h4{ 
+                font-size: 20px;
                 color: $color-azul;
             }
             padding-bottom: 0.5rem;
@@ -36,7 +39,7 @@
 
     .productos-resultados{
         grid-area: productos;
-        @include grid(repeat(3, 1fr), repeat(4, auto), none, center, center);
+        @include grid(repeat(3, 15rem), repeat(4, auto), none, center, center);
         padding-left: 3rem;
         gap: 1rem;
     }
@@ -53,21 +56,29 @@
 }
 
 .producto-imagen{
-    width: 227px;
-    height: 341px;
+    // width: 227px;
+    // height: 341px;
+    width: 100%;
+    height: 100%;
 }
 
 
 .cards{
     width: auto;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
     text-align: center;
     border: 3px solid grey;
     background-image: radial-gradient(circle, rgba(255,251,251,1) 35%, rgba(207,219,218,1) 76%);
     border-radius: 2rem;
+    div{
+        background-color: rgb(173, 127, 173);
+        p{
+            padding-bottom: 5px;
+        }
+    }
     &:hover{
         transform: scale(1.05);
     }
@@ -76,69 +87,81 @@
 .cards{
     div{
         h6{
+            padding-top: 5px;
             font-weight: bold;
         }
     }
 }
 
 .card1{
+    @extend .cards;
     grid-column: 1/2;
     grid-row: 1/2;
-
 }
 
 .card2{
+    @extend .cards;
     grid-column: 2/3;
     grid-row: 1/2;
 }
 
 .card3{
+    @extend .cards;
     grid-column: 3/4;
     grid-row: 1/2;
 }
 
 .card4{
+    @extend .cards;
     grid-column: 1/2;
     grid-row: 2/3;
 }
 
 .card5{
+    @extend .cards;
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
 .card6{
+    @extend .cards;
     grid-column: 3/4;
     grid-row: 2/3;
 }
 
 .card7{
+    @extend .cards;
     grid-column: 1/2;
     grid-row: 3/4;
 }
 
 .card8{
+    @extend .cards;
     grid-column: 2/3;
     grid-row: 3/4;
 }
 
 .card9{
+    @extend .cards;
     grid-column: 3/4;
     grid-row: 3/4;
 }
 
 .card10{
+    @extend .cards;
     grid-column: 1/2;
     grid-row: 4/5;
 
 }
 
 .card11{
+    @extend .cards;
     grid-column: 2/3;
     grid-row: 4/5;
 }
 
 .card12{
+    @extend .cards;
     grid-column: 3/4;
     grid-row: 4/5;
 }

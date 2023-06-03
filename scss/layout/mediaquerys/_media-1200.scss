@@ -85,7 +85,7 @@
         padding-bottom: 10px;
         margin-right: 0px;
         background-color: $color-blanco;
-        @include grid(auto, 3rem 3rem repeat(2, auto) 10rem, none, none, "filtrosHor" "titulo" "productos" "productos" "  .  ");
+        @include grid(auto, 3rem 3rem repeat(2, auto) 5rem, none, none, "filtrosHor" "titulo" "productos" "productos" "  .  ");
         .productos-filtros{
             display: none;
         }
@@ -101,6 +101,7 @@
             @include flex(row, none, space-around, none);
             display: flex;
             justify-content: space-around;
+            
         }
 
         // listado de productos

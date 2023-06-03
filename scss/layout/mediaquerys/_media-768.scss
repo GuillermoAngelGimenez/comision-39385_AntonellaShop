@@ -99,6 +99,17 @@
     main{
     .index-seccion-principal{
         height: auto;
+        .btn-ir-arriba{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            a{
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
         .index-contenido{
         @include grid(20% 80% 20%, auto, center, none, none);
             section{
@@ -144,7 +155,19 @@
     // Cuerpo de productos
     .main-productos{
         grid-area: main;
-        @include grid(auto, auto 3rem repeat(2, auto) 10rem, none, none, "filtrosHor" "titulo" "productos" "productos" "  .  ");
+        @include grid(auto, auto 3rem repeat(2, auto) 5rem, none, none, "filtrosHor" "titulo" "productos" "productos" "  .  ");
+        .btn-ir-arriba{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            a{
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
         .productos-filtros{
             display: none;
         }
@@ -162,10 +185,12 @@
         .productos-resultados{
             grid-area: productos;
             padding-left: 0;
-            gap: 3rem;
-            @include grid(repeat(2, auto), repeat(6, auto), center, center, none);
+            gap: 2.5rem;
+            @include grid(repeat(2, 15rem), repeat(6, auto), center, center, none);
         }
     }    
+
+
 
     .card1{
         grid-column: 1/2;
@@ -182,7 +207,6 @@
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    
     
     .card4{
         grid-column: 2/3;
@@ -217,7 +241,6 @@
         grid-row: 5/6;
     }
     
-    
     .card10{
         grid-column: 2/3;
         grid-row: 5/6;
@@ -238,6 +261,9 @@
         grid-area: main;
         @include grid(10px auto 10px, 2rem auto 10rem, none, center, none);
         padding-right: 0px;
+        .btn-ir-arriba{
+            display: none;
+        }
         section{
             grid-row: 2/3;
             grid-column: 2/3;  

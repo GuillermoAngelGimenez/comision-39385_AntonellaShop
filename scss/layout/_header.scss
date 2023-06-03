@@ -8,16 +8,19 @@ header{
         height: 10rem;
         h1{
             font-family: 'Anton', sans-serif;
+            font-weight: bold;
             text-decoration: underline;
             letter-spacing: 50px;
             font-size: 40px;
             padding-left: 40px;
-            color: rgba(0, 200, 255, 0.934);
+            color: $color-rosa;
+            // color: rgba(0, 200, 255, 0.934);
             -webkit-text-stroke: 1px black;
             text-shadow: 20px 10px 5px grey;
             &::first-letter{
                 font-size: 1.5em; 
             }
+        }
         }
     }
     
@@ -64,13 +67,12 @@ header{
         grid-area: bnav;
     }
 
-}
 
 .animacion-antonella{
     animation: letraALetra;
     animation-timing-function: ease-out;
     animation-iteration-count: 3;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-delay: 2s;
 }
 
@@ -91,7 +93,7 @@ header{
         transform: scale(1);
         color: $color-negro;
         }
-    40%{
+    45%{
         transform: translate(0px,10px);
     }  
     50%{
@@ -115,3 +117,5 @@ header{
         color: $color-amarillo;
     }
 }
+
+

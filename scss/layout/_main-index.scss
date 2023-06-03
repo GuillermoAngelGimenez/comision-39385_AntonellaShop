@@ -3,6 +3,7 @@
     background-image: url($main-index-imagen);
     @include config-imagen(cover, no-repeat, center, scroll);
     height: 65rem;
+
     .index-contenido{
         padding-top: 3rem;
         padding-bottom: 3rem;
