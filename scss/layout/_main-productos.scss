@@ -1,7 +1,5 @@
 .main-productos{
     grid-area: main;
-    // background-image: url($main-productos-imagen);
-    // @include config-imagen(cover, no-repeat, center, scroll);
     padding-bottom: 10px;
     background-color: $color-blanco;
     @include grid(15rem auto,  3rem repeat(2, auto) 10rem, center, none, " .  titulo" "filtros  productos" " .  productos" "   .    . ");
@@ -56,8 +54,6 @@
 }
 
 .producto-imagen{
-    // width: 227px;
-    // height: 341px;
     width: 100%;
     height: 100%;
 }
@@ -66,9 +62,6 @@
 .cards{
     width: auto;
     height: auto;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     text-align: center;
     border: 3px solid grey;
     background-image: radial-gradient(circle, rgba(255,251,251,1) 35%, rgba(207,219,218,1) 76%);

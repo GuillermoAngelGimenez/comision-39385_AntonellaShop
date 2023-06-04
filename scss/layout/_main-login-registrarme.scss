@@ -1,5 +1,4 @@
 .main-login-registrarme{
-    // @include grid(6fr 4fr 2fr, 3rem 28rem auto, none, none, none);
     @include grid(40% 45% 15%, 3rem 28rem auto, none, none, none);
     background-image: url($main-registrarme-imagen);
     @include config-imagen(cover, no-repeat, center, scroll);
@@ -9,8 +8,7 @@
 .login-principal{
     grid-column: 2/3;
     grid-row: 2/3;
-    background-color: $color-blanco;
-    // border: 5px solid $color-azul;  
+    background-color: $color-blanco; 
     border-radius: 30px;
     background-color: $color-gris-redes-sociales;
     opacity: 0.9;
